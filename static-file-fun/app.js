@@ -4,9 +4,9 @@ var fs = require("fs");
 var app = express();
 
 app.use(function(req, res, next) {
-  console.log("Request IP: " + req.url);
-  console.log("Request date: " + new Date());
-  var filePath = path.join(__dirname, "static", req.url);
+  //console.log("Request IP: " + req.url);
+  //console.log("Request date: " + new Date());
+  var filePath = path.join(__dirname, "/static/citrix.png"/*"static", req.url*/);
   //res.redirect('http://klix.ba');
   res.sendFile(filePath);
   next();
