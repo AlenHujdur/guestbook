@@ -1,10 +1,10 @@
 var path = require('path');
 var express = require('express');
 var zipdb = require('zippity-do-dah');
-var ForecastIo = require('forecastio');
+var ForecastIo = require('forecast.io');
 
 var app = express();
-var weather = new ForecastIo("2ec9b1fa287a1af511372484308aa326");
+var weather = new ForecastIo('2ec9b1fa287a1af511372484308aa326');
 
 app.use(express.static(path.resolve(__dirname, "public")));
 
@@ -36,8 +36,10 @@ res.json({
     temperature: data.currently.temperature});
   });
 });
-
-app.use(function(req, res){
-    res.status(404).render("404");
+http.createServer(app).listen(3000, function(){
+  console.log("App started on port 3000.");
 });
-app.listen(3000);
+// app.use(function(req, res){
+//     res.status(404).render("404");
+// });
+// app.listen(3000);

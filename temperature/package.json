@@ -1,13 +1,13 @@
 {
-    "name": "temperature",
-    "private": true,
-    "scripts": {
-     "start": "node app.js"
-    },
-    "dependencies": {
-     "ejs": "^2.6.1",
-     "express": "^4.16.3",
-     "forcastio": "0.0.11",
-     "zippity-do-dah":"0.0.3"
-    }
-   }
+ "name": "temperature",
+ "private": true,
+ "scripts": {
+  "start": "node app"
+ },
+ "dependencies": {
+  "ejs": "^2.6.1",
+  "express": "^4.16.3",
+  "forecast.io": "0.0.11",
+  "zippity-do-dah": "0.0.3"
+ }
+}
