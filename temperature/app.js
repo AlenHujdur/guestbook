@@ -36,3 +36,8 @@ res.json({
     temperature: data.currently.temperature});
   });
 });
+
+app.use(function(req, res){
+    res.status(404).render("404");
+});
+app.listen(3000);
