@@ -36,10 +36,10 @@ res.json({
     temperature: data.currently.temperature});
   });
 });
-http.createServer(app).listen(3000, function(){
-  console.log("App started on port 3000.");
-});
-// app.use(function(req, res){
-//     res.status(404).render("404");
+// http.createServer(app).listen(3000, function(){
+//   console.log("App started on port 3000.");
 // });
-// app.listen(3000);
+app.use(function(req, res){
+    res.status(404).render("404");
+});
+app.listen(3000);
