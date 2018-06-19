@@ -1,15 +1,19 @@
 var path = require('path');
 var express = require('express');
 var zipdb = require('zippity-do-dah');
-var ForecastIo = require('forecast.io');
+//var ForecastIo = require('forecast.io');
+'use strict';
+const ForecastIo = require('forecast-io');
 
 var app = express();
 var weather = new ForecastIo('2ec9b1fa287a1af511372484308aa326');
-var options = {
-  APIKey: process.env.DARKSKY_API_KEY,
-  timeout: 1000
-},
-darksky = new DarkSky(options);
+
+
+// var options = {
+//   APIKey: process.env.DARKSKY_API_KEY,
+//   timeout: 1000
+// },
+// darksky = new DarkSky(options);
 app.use(express.static(path.resolve(__dirname, "public")));
 
 app.set("views", path.resolve(__dirname, "public"));
