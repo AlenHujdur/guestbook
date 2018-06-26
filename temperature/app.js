@@ -2,7 +2,7 @@ var path = require('path');
 var express = require('express');
 var zipdb = require('zippity-do-dah');
 //var ForecastIo = require('forecast.io');
-'use strict';
+//'use strict';
 const ForecastIo = require('forecast-io');
 
 var app = express();
