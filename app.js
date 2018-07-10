@@ -15,8 +15,8 @@ var entries = [];
 app.locals.entries = entries;
 
 //loging every single request
-app.use(logger("dev"));
-app.use(bodyParser.urlencoded({ extended: false}));
+//app.use(logger("dev"));
+//app.use(bodyParser.urlencoded({ extended: false}));
 
 
 //Routes
