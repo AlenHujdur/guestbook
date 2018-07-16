@@ -8,17 +8,10 @@ res.status(400);
 res.json({ error: "Bad request." });
 return;
 }
-Passes two
-parameters in the
-URL of the request
-Does error checking.
-If either number is
-malformed, responds
-with an error.
+//Passes two parameters in the URL of the request Does error checking.
+//If either number is malformed, responds with an error.
 var result = Math.round((Math.random() * (max - min)) + min);
-Calculates and sends
-the result
-as JSON
+//Calculates and sends the result as JSON
 res.json({ result: result });
 });
 app.listen(3000, function() {
