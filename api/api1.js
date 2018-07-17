@@ -6,7 +6,7 @@ api.get("/timezone", function(req, res) {
   res.send("Sample response for /timezone");
 });
 
-api.get("/all timezones", function(req, res) {
+api.get("/all_timezones", function(req, res) {
   res.send("Sample response for /all_timezones");
 });
 
